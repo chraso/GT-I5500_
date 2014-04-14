@@ -1,0 +1,7 @@
+snprintf.o: snprintf.c \
+  /data/opt/c100/android_cupcake_c100/system/core/include/arch/linux-arm/AndroidConfig.h \
+  ../config.h
+
+/data/opt/c100/android_cupcake_c100/system/core/include/arch/linux-arm/AndroidConfig.h:
+
+../config.h:

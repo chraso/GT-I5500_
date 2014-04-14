@@ -1,0 +1,97 @@
+gnu_getopt.o: gnu_getopt.c \
+  /data/opt/c100/android_cupcake_c100/system/core/include/arch/linux-arm/AndroidConfig.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/stdio.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/cdefs.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/cdefs_elf.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/_types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/machine/_types.h \
+  /data/opt/c100/android_cupcake_c100/prebuilt/linux-x86/toolchain/arm-eabi-4.3.1/bin/../lib/gcc/arm-eabi/4.3.1/include/stdarg.h \
+  /data/opt/c100/android_cupcake_c100/prebuilt/linux-x86/toolchain/arm-eabi-4.3.1/bin/../lib/gcc/arm-eabi/4.3.1/include/stddef.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/stdint.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/posix_types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/stddef.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/compiler.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/posix_types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/machine/kernel.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/sysmacros.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/stdlib.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/string.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/malloc.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/alloca.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/strings.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/memory.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/unistd.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/select.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/time.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/time.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/sysconf.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/capability.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/pathconf.h \
+  ../include/gnu_getopt.h
+
+/data/opt/c100/android_cupcake_c100/system/core/include/arch/linux-arm/AndroidConfig.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/stdio.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/cdefs.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/cdefs_elf.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/_types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/machine/_types.h:
+
+/data/opt/c100/android_cupcake_c100/prebuilt/linux-x86/toolchain/arm-eabi-4.3.1/bin/../lib/gcc/arm-eabi/4.3.1/include/stdarg.h:
+
+/data/opt/c100/android_cupcake_c100/prebuilt/linux-x86/toolchain/arm-eabi-4.3.1/bin/../lib/gcc/arm-eabi/4.3.1/include/stddef.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/stdint.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/posix_types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/stddef.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/compiler.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/posix_types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/machine/kernel.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/sysmacros.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/stdlib.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/string.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/malloc.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/alloca.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/strings.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/memory.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/unistd.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/select.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/time.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/time.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/sysconf.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/capability.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/pathconf.h:
+
+../include/gnu_getopt.h:

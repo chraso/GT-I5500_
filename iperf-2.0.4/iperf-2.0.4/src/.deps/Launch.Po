@@ -1,0 +1,269 @@
+Launch.o: Launch.cpp \
+  /data/opt/c100/android_cupcake_c100/system/core/include/arch/linux-arm/AndroidConfig.h \
+  ../include/headers.h ../config.h ../include/fixpt.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/stdlib.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/cdefs.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/cdefs_elf.h \
+  /data/opt/c100/android_cupcake_c100/prebuilt/linux-x86/toolchain/arm-eabi-4.3.1/bin/../lib/gcc/arm-eabi/4.3.1/include/stddef.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/string.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/malloc.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/alloca.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/strings.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/memory.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/stdio.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/_types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/machine/_types.h \
+  /data/opt/c100/android_cupcake_c100/prebuilt/linux-x86/toolchain/arm-eabi-4.3.1/bin/../lib/gcc/arm-eabi/4.3.1/include/stdarg.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/stdint.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/posix_types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/stddef.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/compiler.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/posix_types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/machine/kernel.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/sysmacros.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/assert.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/ctype.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/errno.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/errno.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/errno.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/asm-generic/errno.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/asm-generic/errno-base.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/time.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/time.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/time.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/siginfo.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/asm-generic/siginfo.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libm/include/math.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/limits.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/limits.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/limits.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/machine/internal_types.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/machine/limits.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/socket.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/socket.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/socket.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/sockios.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/sockios.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/uio.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/signal.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/signal.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/asm-generic/signal.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/unistd.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/select.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/sysconf.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/capability.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/pathconf.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/syslog.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/netdb.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/netinet/in.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/endian.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/endian.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/in.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/byteorder.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/byteorder/little_endian.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/byteorder/swab.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/byteorder/generic.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/in6.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/netinet/tcp.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/tcp.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/arpa/inet.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/netinet/in6.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/pthread.h \
+  /data/opt/c100/android_cupcake_c100/bionic/libc/include/sched.h \
+  ../include/iperf-int.h ../include/gettimeofday.h ../include/inet_aton.h \
+  ../include/headers.h ../include/snprintf.h ../include/Thread.h \
+  ../include/Condition.h ../include/Mutex.h ../include/util.h \
+  ../include/Settings.hpp ../include/Thread.h ../include/Reporter.h \
+  ../include/Settings.hpp ../include/Client.hpp ../include/Timestamp.hpp \
+  ../include/Listener.hpp ../include/Server.hpp ../include/PerfSocket.hpp
+
+/data/opt/c100/android_cupcake_c100/system/core/include/arch/linux-arm/AndroidConfig.h:
+
+../include/headers.h:
+
+../config.h:
+
+../include/fixpt.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/stdlib.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/cdefs.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/cdefs_elf.h:
+
+/data/opt/c100/android_cupcake_c100/prebuilt/linux-x86/toolchain/arm-eabi-4.3.1/bin/../lib/gcc/arm-eabi/4.3.1/include/stddef.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/string.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/malloc.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/alloca.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/strings.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/memory.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/stdio.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/_types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/machine/_types.h:
+
+/data/opt/c100/android_cupcake_c100/prebuilt/linux-x86/toolchain/arm-eabi-4.3.1/bin/../lib/gcc/arm-eabi/4.3.1/include/stdarg.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/stdint.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/posix_types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/stddef.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/compiler.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/posix_types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/machine/kernel.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/sysmacros.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/assert.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/ctype.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/errno.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/errno.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/errno.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/asm-generic/errno.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/asm-generic/errno-base.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/time.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/time.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/time.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/siginfo.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/asm-generic/siginfo.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libm/include/math.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/limits.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/limits.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/limits.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/machine/internal_types.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/machine/limits.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/socket.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/socket.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/socket.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/sockios.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/sockios.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/uio.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/signal.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/signal.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/asm-generic/signal.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/unistd.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/select.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/sysconf.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/capability.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/pathconf.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/syslog.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/netdb.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/netinet/in.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/arch-arm/include/endian.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sys/endian.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/in.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/arch-arm/asm/byteorder.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/byteorder/little_endian.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/byteorder/swab.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/byteorder/generic.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/in6.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/netinet/tcp.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/kernel/common/linux/tcp.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/arpa/inet.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/netinet/in6.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/pthread.h:
+
+/data/opt/c100/android_cupcake_c100/bionic/libc/include/sched.h:
+
+../include/iperf-int.h:
+
+../include/gettimeofday.h:
+
+../include/inet_aton.h:
+
+../include/headers.h:
+
+../include/snprintf.h:
+
+../include/Thread.h:
+
+../include/Condition.h:
+
+../include/Mutex.h:
+
+../include/util.h:
+
+../include/Settings.hpp:
+
+../include/Thread.h:
+
+../include/Reporter.h:
+
+../include/Settings.hpp:
+
+../include/Client.hpp:
+
+../include/Timestamp.hpp:
+
+../include/Listener.hpp:
+
+../include/Server.hpp:
+
+../include/PerfSocket.hpp:

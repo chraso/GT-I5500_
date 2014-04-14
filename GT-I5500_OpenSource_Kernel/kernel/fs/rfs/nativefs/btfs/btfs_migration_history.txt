@@ -1,0 +1,14 @@
+
+BTFS migration hiostory
+
+
+Author	: DY Seo.
+
+
+
+07-NOV-2007	first migration from TFS4 2.0.2
+09-NOV-2007	2nd migration from TFS4 2.0.2
+22-NOV-2007	3rd migration from TFS4 2.0.2
+27-NOV-2007	4th migration from TFS4 2.0.2
+11-DEC-2007	5th migration from TFS4 2.0.2 to CS_BTFS_REENTRANT
+

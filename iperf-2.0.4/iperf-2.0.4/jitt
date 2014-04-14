@@ -1,0 +1,144 @@
+src/Settings.cpp:    int flags = ntohl(hdr->flags);
+src/Settings.cpp:        (*client)->mPort       = (unsigned short) ntohl(hdr->mPort);
+src/Settings.cpp:        (*client)->mThreads    = ntohl(hdr->numThreads);
+src/Settings.cpp:        if ( hdr->bufferlen != 0 ) {
+src/Settings.cpp:            (*client)->mBufLen = ntohl(hdr->bufferlen);
+src/Settings.cpp:        if ( hdr->mWinBand != 0 ) {
+src/Settings.cpp:                (*client)->mUDPRate = ntohl(hdr->mWinBand);
+src/Settings.cpp:                (*client)->mTCPWin = ntohl(hdr->mWinBand);
+src/Settings.cpp:        (*client)->mAmount     = ntohl(hdr->mAmount);
+src/Settings.cpp:        hdr->flags  = htonl(HEADER_VERSION1);
+src/Settings.cpp:        hdr->flags  = 0;
+src/Settings.cpp:        hdr->bufferlen = htonl(client->mBufLen);
+src/Settings.cpp:        hdr->bufferlen = 0;
+src/Settings.cpp:        hdr->mWinBand  = htonl(client->mUDPRate);
+src/Settings.cpp:        hdr->mWinBand  = htonl(client->mTCPWin);
+src/Settings.cpp:        hdr->mPort  = htonl(client->mListenPort);
+src/Settings.cpp:        hdr->mPort  = htonl(client->mPort);
+src/Settings.cpp:    hdr->numThreads = htonl(client->mThreads);
+src/Settings.cpp:        hdr->mAmount    = htonl(-(long)client->mAmount);
+src/Settings.cpp:        hdr->mAmount    = htonl((long)client->mAmount);
+src/Settings.cpp:        hdr->mAmount &= htonl( 0x7FFFFFFF );
+src/Settings.cpp:        hdr->flags |= htonl(RUN_NOW);
+src/Reporter.c:            Condition_Initialize( &multihdr->barrier );
+src/Reporter.c:            multihdr->groupID = inID;
+src/Reporter.c:            multihdr->threads = agent->mThreads;
+src/Reporter.c:                multihdr->report = (ReporterData*)(multihdr + 1);
+src/Reporter.c:                memset(multihdr->report, 0, sizeof(ReporterData));
+src/Reporter.c:                multihdr->data = (Transfer_Info*)(multihdr->report + 1);
+src/Reporter.c:                data = multihdr->report;
+src/Reporter.c:                    multihdr->data[i].startTime = -1;
+src/Reporter.c:                    multihdr->data[i].transferID = inID;
+src/Reporter.c:                    multihdr->data[i].groupID = -2;
+src/Reporter.c:                    multihdr->report->info.mUDP = (char)agent->mThreadMode;
+src/Reporter.c:            reporthdr->data = (ReportStruct*)(reporthdr+1);
+src/Reporter.c:            reporthdr->multireport = agent->multihdr;
+src/Reporter.c:            data = &reporthdr->report;
+src/Reporter.c:            reporthdr->reporterindex = NUM_REPORT_STRUCTS - 1;
+src/Reporter.c:            data->info.groupID = (agent->multihdr != NULL ? agent->multihdr->groupID 
+src/Reporter.c:                reporthdr->report.info.mUDP = (char)agent->mThreadMode;
+src/Reporter.c:                data = &reporthdr->report;
+src/Reporter.c:        if ( reporthdr->report.mThreadMode == kMode_Client &&
+src/Reporter.c:             reporthdr->multireport != NULL ) {
+src/Reporter.c:            if ( reporthdr->multireport != NULL && isMultipleReport( agent )) {
+src/Reporter.c:                reporthdr->multireport->threads++;
+src/Reporter.c:                if ( reporthdr->multireport->report->startTime.tv_sec == 0 ) {
+src/Reporter.c:                    gettimeofday( &(reporthdr->multireport->report->startTime), NULL );
+src/Reporter.c:                reporthdr->report.startTime = reporthdr->multireport->report->startTime;
+src/Reporter.c:                gettimeofday( &(reporthdr->report.startTime), NULL );
+src/Reporter.c:            reporthdr->report.nextTime = reporthdr->report.startTime;
+src/Reporter.c:            TimeAdd( reporthdr->report.nextTime, reporthdr->report.intervalTime );
+src/Reporter.c:        reporthdr->next = ReportRoot;
+src/Reporter.c:        gettimeofday( &(reporthdr->report.startTime), NULL );
+src/Reporter.c:        reporthdr->next = NULL;
+src/Reporter.c:            ReporterData *data = &reporthdr->report;
+src/Reporter.c:            reporthdr->agentindex = -1;
+src/Reporter.c:            reporthdr->reporterindex = -1;
+src/Reporter.c:            reporthdr->next = ReportRoot;
+src/Reporter.c:            reporthdr->next = NULL;
+src/Reporter.c:        Transfer_Info *stats = &reporthdr->report.info;
+src/Reporter.c:            stats->groupID = (agent->multihdr != NULL ? agent->multihdr->groupID 
+src/Reporter.c:            reporthdr->agentindex = -1;
+src/Reporter.c:            reporthdr->reporterindex = -1;
+src/Reporter.c:            reporthdr->report.type = SERVER_RELAY_REPORT;
+src/Reporter.c:            reporthdr->report.mode = agent->mReportMode;
+src/Reporter.c:            reporthdr->report.connection.peer = agent->local;
+src/Reporter.c:            reporthdr->report.connection.size_peer = agent->size_local;
+src/Reporter.c:            reporthdr->report.connection.local = agent->peer;
+src/Reporter.c:            reporthdr->report.connection.size_local = agent->size_peer;
+src/Reporter.c:            reporthdr->next = ReportRoot;
+src/Reporter.c:            reporthdr->next = NULL;
+src/Reporter.c:    if ( reporthdr->next != NULL ) {
+src/Reporter.c:        if ( reporter_process_report( reporthdr->next ) ) {
+src/Reporter.c:            ReportHeader *temp = reporthdr->next;
+src/Reporter.c:            reporthdr->next = reporthdr->next->next;
+src/Reporter.c:    if ( (reporthdr->report.type & SETTINGS_REPORT) != 0 ) {
+src/Reporter.c:        reporthdr->report.type &= ~SETTINGS_REPORT;
+src/Reporter.c:        return reporter_print( &reporthdr->report, SETTINGS_REPORT, 1 );
+src/Reporter.c:    } else if ( (reporthdr->report.type & CONNECTION_REPORT) != 0 ) {
+src/Reporter.c:        reporthdr->report.type &= ~CONNECTION_REPORT;
+src/Reporter.c:        reporter_print( &reporthdr->report, CONNECTION_REPORT,
+src/Reporter.c:                               (reporthdr->report.type == 0 ? 1 : 0) );
+src/Reporter.c:        if ( reporthdr->multireport != NULL && isMultipleReport( (&reporthdr->report) )) {
+src/Reporter.c:            if ( (reporthdr->multireport->report->type & CONNECTION_REPORT) != 0 ) {
+src/Reporter.c:                reporthdr->multireport->report->type &= ~CONNECTION_REPORT;
+src/Reporter.c:                reporter_print( reporthdr->multireport->report, CONNECTION_REPORT,
+src/Reporter.c:                                (reporthdr->report.type == 0 ? 1 : 0) );
+src/Reporter.c:    } else if ( (reporthdr->report.type & SERVER_RELAY_REPORT) != 0 ) {
+src/Reporter.c:        reporthdr->report.type &= ~SERVER_RELAY_REPORT;
+src/Reporter.c:        return reporter_print( &reporthdr->report, SERVER_RELAY_REPORT, 1 );
+src/Reporter.c:    if ( (reporthdr->report.type & TRANSFER_REPORT) != 0 ) {
+src/Reporter.c:        if ( reporthdr->reporterindex >= 0 ) {
+src/Reporter.c:            while ( reporthdr->reporterindex != reporthdr->agentindex - 1 ) {
+src/Reporter.c:                if ( reporthdr->reporterindex == NUM_REPORT_STRUCTS - 1 ) {
+src/Reporter.c:                    if ( reporthdr->agentindex == 0 ) {
+src/Reporter.c:                        reporthdr->reporterindex = 0;
+src/Reporter.c:                    reporthdr->reporterindex++;
+src/Reporter.c:                    reporthdr->reporterindex = -1;
+src/Reporter.c:        if ( reporthdr->agentindex == -1 ) {
+src/Reporter.c:    ReportStruct *packet = &reporthdr->data[reporthdr->reporterindex];
+src/Reporter.c:    ReporterData *data = &reporthdr->report;
+src/Reporter.c:    Transfer_Info *stats = &reporthdr->report.info;
+src/Reporter.c:        if ( reporthdr->report.mThreadMode != kMode_Client ) {
+src/Reporter.c:        reporter_condprintstats( &reporthdr->report, reporthdr->multireport, finished );
+src/Reporter.c:    return reporter_condprintstats( &reporthdr->report, reporthdr->multireport, finished );
+src/Reporter.c:        if ( reporthdr->threads > 1 ) {
+src/Reporter.c:                current = &reporthdr->data[i];
+src/Reporter.c:                    current = &reporthdr->data[i];
+src/Reporter.c:                if ( current->free == reporthdr->threads ) {
+src/Reporter.c:                    void *reserved = reporthdr->report->info.reserved_delay;
+src/Reporter.c:                    memcpy( &reporthdr->report->info, current, sizeof(Transfer_Info) );
+src/Reporter.c:                    reporthdr->report->info.reserved_delay = reserved;
+src/Reporter.c:                    reporter_print( reporthdr->report, MULTIPLE_REPORT, force );
+src/Listener.cpp:                        hdr->flags        = htonl( HEADER_VERSION1 );
+src/Listener.cpp:                        hdr->total_len1   = htonl( (long) (stats->TotalLen >> 32) );
+src/Listener.cpp:                        hdr->total_len2   = htonl( (long) (stats->TotalLen & 0xFFFFFFFF) );
+src/Listener.cpp:                        hdr->stop_sec     = htonl( (long) stats->endTime );
+src/Listener.cpp:                        hdr->stop_usec    = htonl( (long)((stats->endTime - (long)stats->endTime)
+src/Listener.cpp:                        hdr->error_cnt    = htonl( stats->cntError );
+src/Listener.cpp:                        hdr->outorder_cnt = htonl( stats->cntOutofOrder );
+src/Listener.cpp:                        hdr->datagrams    = htonl( stats->cntDatagrams );
+src/Listener.cpp:                        sfixptToTimeval(FIXPT_WHOLEBITS, FIXPT_FRACTBITS, stats->fJitter, &hdr->jitter1, &hdr->jitter2);
+src/Listener.cpp:                        hdr->jitter1      = htonl(hdr->jitter1);
+src/Listener.cpp:                        hdr->jitter2      = htonl(hdr->jitter2);
+src/Listener.cpp:                        hdr->jitter1      = htonl( (long) stats->jitter );
+src/Listener.cpp:                        hdr->jitter2      = htonl( (long) ((stats->jitter - (long)stats->jitter) 
+src/Listener.cpp:                    hdr->flags = htonl( 0 );
+src/Server.cpp:            hdr->flags        = htonl( HEADER_VERSION1 );
+src/Server.cpp:            hdr->total_len1   = htonl( (long) (stats->TotalLen >> 32) );
+src/Server.cpp:            hdr->total_len2   = htonl( (long) (stats->TotalLen & 0xFFFFFFFF) );
+src/Server.cpp:            hdr->stop_sec     = htonl( (long) stats->endTime );
+src/Server.cpp:            hdr->stop_usec    = htonl( (long)((stats->endTime - (long)stats->endTime)
+src/Server.cpp:            hdr->error_cnt    = htonl( stats->cntError );
+src/Server.cpp:            hdr->outorder_cnt = htonl( stats->cntOutofOrder );
+src/Server.cpp:            hdr->datagrams    = htonl( stats->cntDatagrams );
+src/Server.cpp:			sfixptToTimeval(FIXPT_WHOLEBITS, FIXPT_FRACTBITS, stats->fJitter, &hdr->jitter1, &hdr->jitter2);
+src/Server.cpp:			hdr->jitter1      = htonl(hdr->jitter1);
+src/Server.cpp:			hdr->jitter2      = htonl(hdr->jitter2);
+src/Server.cpp:            hdr->jitter1      = htonl( (long) stats->jitter );
+src/Server.cpp:            hdr->jitter2      = htonl( (long) ((stats->jitter - (long)stats->jitter) 
+src/Client.cpp:            mSettings->multihdr->report->connection.peer = mSettings->peer;
+src/Client.cpp:            mSettings->multihdr->report->connection.size_peer = mSettings->size_peer;
+src/Client.cpp:            mSettings->multihdr->report->connection.local = mSettings->local;
+src/Client.cpp:            SockAddr_setPortAny( &mSettings->multihdr->report->connection.local );
+src/Client.cpp:            mSettings->multihdr->report->connection.size_local = mSettings->size_local;

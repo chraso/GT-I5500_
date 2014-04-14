@@ -1,0 +1,1 @@
+cmd_usr/initramfs_data.cpio.gz := /bin/sh /home/se-part/Opensource/Europa_TIM/eclair/GT-I5500_OpenSource/GT-I5500_OpenSource_Kernel/kernel/scripts/gen_initramfs_list.sh -o usr/initramfs_data.cpio.gz   -d

@@ -1,0 +1,1 @@
+cmd_drivers/staging/android/logger_test.ko := ../toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL -r   --build-id -o drivers/staging/android/logger_test.ko drivers/staging/android/logger_test.o drivers/staging/android/logger_test.mod.o

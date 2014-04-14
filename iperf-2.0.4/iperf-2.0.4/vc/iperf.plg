@@ -1,0 +1,96 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: iperf - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Wilson\LOCALS~1\Temp\RSP34.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /I "..\include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D "HAVE_CONFIG_H" /FR"Debug/" /Fp"Debug/iperf.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\temp\vmshare\iperf-2.0.2\src\Client.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Wilson\LOCALS~1\Temp\RSP34.tmp" 
+Creating temporary file "C:\DOCUME~1\Wilson\LOCALS~1\Temp\RSP35.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib /nologo /subsystem:console /profile /debug /machine:I386 /out:"Debug/iperf.exe" 
+".\Debug\Client.obj"
+".\Debug\delay.obj"
+".\Debug\error.obj"
+".\Debug\Extractor.obj"
+".\Debug\gettimeofday.obj"
+".\Debug\gnu_getopt.obj"
+".\Debug\gnu_getopt_long.obj"
+".\Debug\inet_ntop.obj"
+".\Debug\inet_pton.obj"
+".\Debug\Launch.obj"
+".\Debug\List.obj"
+".\Debug\Listener.obj"
+".\Debug\Locale.obj"
+".\Debug\main.obj"
+".\Debug\PerfSocket.obj"
+".\Debug\ReportCSV.obj"
+".\Debug\ReportDefault.obj"
+".\Debug\Reporter.obj"
+".\Debug\Server.obj"
+".\Debug\service.obj"
+".\Debug\Settings.obj"
+".\Debug\signal.obj"
+".\Debug\snprintf.obj"
+".\Debug\SocketAddr.obj"
+".\Debug\sockets.obj"
+".\Debug\stdio.obj"
+".\Debug\string.obj"
+".\Debug\tcp_window_size.obj"
+".\Debug\Thread.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Wilson\LOCALS~1\Temp\RSP35.tmp"
+<h3>Output Window</h3>
+Compiling...
+Client.cpp
+D:\temp\vmshare\iperf-2.0.2\src\Client.cpp(349) : warning C4018: '==' : signed/unsigned mismatch
+Linking...
+Creating temporary file "C:\DOCUME~1\Wilson\LOCALS~1\Temp\RSP37.tmp" with contents
+[
+/nologo /o"Debug/iperf.bsc" 
+".\Debug\Client.sbr"
+".\Debug\delay.sbr"
+".\Debug\error.sbr"
+".\Debug\Extractor.sbr"
+".\Debug\gettimeofday.sbr"
+".\Debug\gnu_getopt.sbr"
+".\Debug\gnu_getopt_long.sbr"
+".\Debug\inet_ntop.sbr"
+".\Debug\inet_pton.sbr"
+".\Debug\Launch.sbr"
+".\Debug\List.sbr"
+".\Debug\Listener.sbr"
+".\Debug\Locale.sbr"
+".\Debug\main.sbr"
+".\Debug\PerfSocket.sbr"
+".\Debug\ReportCSV.sbr"
+".\Debug\ReportDefault.sbr"
+".\Debug\Reporter.sbr"
+".\Debug\Server.sbr"
+".\Debug\service.sbr"
+".\Debug\Settings.sbr"
+".\Debug\signal.sbr"
+".\Debug\snprintf.sbr"
+".\Debug\SocketAddr.sbr"
+".\Debug\sockets.sbr"
+".\Debug\stdio.sbr"
+".\Debug\string.sbr"
+".\Debug\tcp_window_size.sbr"
+".\Debug\Thread.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\Wilson\LOCALS~1\Temp\RSP37.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+iperf.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

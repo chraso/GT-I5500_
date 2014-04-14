@@ -1,0 +1,4 @@
+service.o: service.c \
+  /data/opt/c100/android_cupcake_c100/system/core/include/arch/linux-arm/AndroidConfig.h
+
+/data/opt/c100/android_cupcake_c100/system/core/include/arch/linux-arm/AndroidConfig.h:

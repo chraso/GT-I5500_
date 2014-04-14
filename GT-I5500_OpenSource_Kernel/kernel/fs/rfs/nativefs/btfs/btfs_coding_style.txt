@@ -1,0 +1,175 @@
+
+-. primitive type
+
+	. t_int8		char
+	. t_uint8		unsigned char
+	. t_int16		signed short
+	. t_uint16		unsigned short
+	. t_int32		signed long
+	. t_uint32		unsigned long
+	. t_vptr		void*
+	. t_wchar		t_uint16
+	. t_boolean		t_int32
+
+-. tab size : 4
+	. do not use 4 space instead of tab !!	
+
+-. function naming rule for API
+	. rule : FFAT_{function name}()
+	. {function name}	: start with Upper Character
+	. ex) FFAT_Create()
+	. ex) FFAT_Write()
+
+-. function naming rule for internal function
+	. rule : {module}_{sub module}_{function name}()
+	. {module} and {sub module} : all lower character
+	. {function name}			: lower and upper character
+	. ex) FFAT_Create()	
+	. ex) ffat_node_lock()
+	. ex) ffat_node_getStatus()
+	
+	
+-. variable naming rule
+	. rule : {type prefix}{Name}
+	. type prefix
+		b	: byte, character 	(1byte)
+		w	: word	(2byte)
+		dw	: double word, boolean (4byte)
+		p	: pointer
+		st	: structure
+		g	: global variable
+		sz	: null terminated string
+	. ex) dwValue, 
+	. ex) pStruct	: sturcture pointer,
+					: It may omit (st} when it is a pointer.
+	. ex) gstNode	: glboal structure
+	. ex) szName	: null terminated string
+	. ex) pName		: name string, (may be no 'sz')
+
+
+-. pointer declaration
+	. lay it to type part,
+	. ex) t_int8*	ch;
+	. ex) t_uint32*	pdwtemp;
+
+
+-. Enumeration
+	. rule : use upper character and '_'
+	. ex)
+		typedef enum
+		{
+			FFAT_NODE_NONE		= 0x00;		//!< no node flag
+			FFAT_NODE_VALIE		= 0x01;		//!< a valid flag
+			
+			FFAT_NODE_DUMMY		= 0x7FFFFFFF;	/* to enlarge 4 byte */
+		} FFatNodeFlag;
+		
+		
+-. macro
+	. rule : upper character and '_'
+	. ex) #define TRUE		true
+	
+	
+. wrap every condition wiht ( )
+	. ex)
+		if ( (i == 0) && (j == 0))
+		{
+		
+		}
+	
+-. file and directory
+	. all directory name is composed with upper character and '_'
+	. all file name is composed with lower character and '_'
+
+
+-. header .h
+	. External headers shoulde not include any internal header.
+	. All header files are included at source(.c) file
+	. This is for removing mutual reference.
+
+-. header include sequnce
+	1. STD C
+	2. ess_base libaray
+	3. ffat config
+	4. ffatfs
+	5. ffat core
+
+-. file header
+	
+	.refer to file ffat_template.c and ffat_template.h
+
+	/*
+	 * BTFS(Beyond The FAT fileSystem) Developed by Flash Software Group.
+	 *
+	 * Copyright 2006-2009 by Memory Division, Samsung Electronics, Inc.,
+	 * San #16, Banwol-Dong, Hwasung-City, Gyeonggi-Do, Korea
+	 *
+	 * All rights reserved.
+	 *
+	 * This software is the confidential and proprietary information
+	 * of Samsung Electronics, Inc. ("Confidential Information").  You
+	 * shall not disclose such Confidential Information and shall use
+	 * it only in accordance with the terms of the license agreement
+	 * you entered into with Samsung.
+	 */
+	
+	/** 
+	 * @file		ffat_config.h
+	 * @brief		The global configuration for FFAT
+	 * @author		Seo Dong Young(dy76.seo@samsung.com)
+	 * @version	  	JUL-04-2006 [DongYoung Seo] First writing
+	 * @see			None
+	 */
+
+
+-. Function header
+	/**
+	 * This function initializes FFAT filesystem.
+	 *
+	 * @param		cluster : [IN] cluster number
+	 * @return		return value description
+	 * @author		DongYoung Seo
+	 * @version		JUL-04-2006 [DongYoung Seo] First Writing.
+	 */
+
+
+-. Use assert sentense as possible as !!!
+	. this will be removed before release.
+	-. ESG_ASSERT({condition})
+	-. ESG_ASSERTP({condition}, "{error string}")
+
+
+-. maximum line length
+	. max 120 character in a line
+	
+-. comment
+	. normal comment : /* */ or ////
+	. normal comment for doxygen : /*!< comment */
+	. internal comment : //
+		- this will be removed before release
+	. internal comment for doxygen : //!<
+		
+
+
+-. debug code descritpion
+	. wrap with "// debug begin" and "// debug end"
+	. this codes will be removed before release
+	. ex)
+		// debug begin
+			debug codes.
+		// debug end
+	
+		
+-. code for internal test purpose
+	. wrap with "// test begin" and "// test end"
+	. this codes will be removed automatically by tool before release
+	. ex)
+		// test begin
+			test codes.
+		// test end
+
+. error message - . this macros will be removed before release
+	. FFAT_DEBUG_PRINTF - print for debug message, same as printf()
+	. FFAT_LOG_PRINTF	- print function name + file name with error string,
+						- string only.
+	

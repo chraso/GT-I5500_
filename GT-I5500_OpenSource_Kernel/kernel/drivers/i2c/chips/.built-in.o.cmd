@@ -1,0 +1,1 @@
+cmd_drivers/i2c/chips/built-in.o :=  ../toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL    -r -o drivers/i2c/chips/built-in.o drivers/i2c/chips/fsa9280.o drivers/i2c/chips/bma220.o drivers/i2c/chips/bma023_dev.o drivers/i2c/chips/bma_accel_driver.o drivers/i2c/chips/mmc31xx.o drivers/i2c/chips/mecs.o 

@@ -1,0 +1,10 @@
+kernel/arch/arm/mach-msm/reset_modem.ko
+kernel/arch/arm/mach-msm/dma_test.ko
+kernel/fs/rfs/rfs_glue.ko
+kernel/fs/rfs/rfs_fat.ko
+kernel/drivers/misc/pmem_kernel_test.ko
+kernel/drivers/input/evbug.ko
+kernel/drivers/staging/android/logger_test.ko
+kernel/drivers/fsr/fsr.ko
+kernel/drivers/fsr/fsr_stl.ko
+kernel/arch/arm/oprofile/oprofile.ko
