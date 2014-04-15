@@ -1,1 +1,0 @@
-cmd_arch/arm/mach-msm/reset_modem.ko := ../toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL -r   --build-id -o arch/arm/mach-msm/reset_modem.ko arch/arm/mach-msm/reset_modem.o arch/arm/mach-msm/reset_modem.mod.o

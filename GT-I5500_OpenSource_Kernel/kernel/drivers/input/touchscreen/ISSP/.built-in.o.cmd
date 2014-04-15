@@ -1,1 +1,0 @@
-cmd_drivers/input/touchscreen/ISSP/built-in.o :=  ../toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL    -r -o drivers/input/touchscreen/ISSP/built-in.o drivers/input/touchscreen/ISSP/TouchUpdater.o drivers/input/touchscreen/ISSP/issp_driver_routines.o drivers/input/touchscreen/ISSP/issp_routines.o 

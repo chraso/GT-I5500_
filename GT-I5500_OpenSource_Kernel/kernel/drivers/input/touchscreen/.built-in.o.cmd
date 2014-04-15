@@ -1,1 +1,0 @@
-cmd_drivers/input/touchscreen/built-in.o :=  ../toolchain/arm-eabi-4.4.0/bin/arm-eabi-ld -EL    -r -o drivers/input/touchscreen/built-in.o drivers/input/touchscreen/synaptics_i2c_rmi4.o drivers/input/touchscreen/ISSP/built-in.o 
